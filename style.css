@@ -1,12 +1,16 @@
 body {
   background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
 }
 
 .centerBox {
-  margin: 0 auto;
-  max-width: 30vw;
-  background-color: hsl(213deg, 19%, 18%);
+  margin: 20vh auto;
+  max-width: 250px;
+  max-height: 250px;
+  background-color: #1f2630;
   color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 #thank-you-page {
@@ -14,21 +18,47 @@ body {
 }
 
 .header {
-  color: #fafafd;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1em;
 }
 
 .smallText {
-  color: #7c838d;
+  color: hsl(217deg, 12%, 63%);
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
 }
 
 .numberBtn {
   background-color: #262f38;
-  color: #7c838d;
+  color: hsl(217deg, 12%, 63%);
   border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin: 25px 0;
 }
 
 .submitBtn {
-  background-color: #fc7613;
-  color: #ffe0b1;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
   border: none;
+  height: 30px;
+  border-radius: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
