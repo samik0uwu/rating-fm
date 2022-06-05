@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,34 +17,34 @@
 <body>
 
   <!-- Rating state start -->
-<div class="shown" id="rating-page">
+<div id="rating-page">
   <h1> How did we do?</h1>
 
   <p> let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <button>5</button>
+  <button id="1" onclick="getValue(this.id)">1</button>
+  <button id="2" onclick="getValue(this.id)">2</button>
+  <button id="3" onclick="getValue(this.id)">3</button>
+  <button id="4" onclick="getValue(this.id)">4</button>
+  <button id="5" onclick="getValue(this.id)">5</button>
 
 
 
 
- <button> Submit</button>
+ <button onclick="toggleView()"> Submit</button>
 </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-<div class="hidden" id="thank-you-page">
-  You selected <!-- Add rating here --> out of 5
+<div id="thank-you-page">
+  <p>You selected </p><p id="selectedRating"></p><p>out of 5</p>
 
-  Thank you!
+  <h1>Thank you!</h1>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
 
   <!-- Thank you state end -->
 </div>
@@ -56,6 +56,21 @@
 
 
   <script>
+      var rating = document.getElementById("rating-page")
+      var thankyou = document.getElementById("thank-you-page")
+
+      function toggleView(){
+      rating.style.display= "none";
+      thankyou.style.display="block";
+      document.getElementById("selectedRating").innerHTML=rating.innerText;
+      };
+
+      function getValue(value){
+        let rating =document.getElementById(value).innerHTML;
+        console.log(rating);
+        console.log(document.getElementById(value));
+        console.log(value);
+      };
 
   </script>
 </body>
