@@ -7,46 +7,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body >
 
   <!-- Rating state start -->
-<div id="rating-page">
-  <h1> How did we do?</h1>
+<div class="centerBox" id="rating-page">
+  <img src="images/icon-star.svg" alt="star">
+  <h1 class="header"> How did we do?</h1>
 
-  <p> let us know how we did with your support request. All feedback is appreciated 
+  <p class="smallText" > let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
-  <button id="1" onclick="getValue(this.id)">1</button>
-  <button id="2" onclick="getValue(this.id)">2</button>
-  <button id="3" onclick="getValue(this.id)">3</button>
-  <button id="4" onclick="getValue(this.id)">4</button>
-  <button id="5" onclick="getValue(this.id)">5</button>
+  <button class="numberBtn" id="1" onclick="getValue(this.id)">1</button>
+  <button class="numberBtn" id="2" onclick="getValue(this.id)">2</button>
+  <button class="numberBtn" id="3" onclick="getValue(this.id)">3</button>
+  <button class="numberBtn" id="4" onclick="getValue(this.id)">4</button>
+  <button class="numberBtn" id="5" onclick="getValue(this.id)">5</button>
 
 
 
 
- <button onclick="toggleView()"> Submit</button>
+ <button class="submitBtn" onclick="toggleView()"> Submit</button>
 </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-<div id="thank-you-page">
+<div class="centerBox" id="thank-you-page">
+  <img src="images/illustration-thank-you.svg" alt="thank you illustration">
   <p id="selectedRating"></p>
 
-  <h1>Thank you!</h1>
+  <h1 class="header">Thank you!</h1>
 
-  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  <p class="smallText" >We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
 
-  <!-- Thank you state end -->
 </div>
   
   <div class="attribution">
@@ -55,26 +54,6 @@
   </div>
 
 
-  <script>
-
-      var rating = document.getElementById("rating-page")
-      var thankyou = document.getElementById("thank-you-page")
-      var ratedVal=0;
-    
-
-      function toggleView(){
-      rating.style.display= "none";
-      thankyou.style.display="block";
-      document.getElementById("selectedRating").innerText="You selected "+ratedVal+" out of 5";
-      console.log(ratedVal);
-      };
-
-      function getValue(value){
-        // var rating =value;
-        ratedVal=value;
-        console.log(ratedVal);
-      };
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
