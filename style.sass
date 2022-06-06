@@ -1,54 +1,89 @@
+$white: hsl(0, 0%, 100%)
+$light-grey: hsl(217, 12%, 63%)
+$medium-grey: hsl(216, 12%, 54%)
+$dark-blue: hsl(213, 19%, 18%)
+$darker-blue: #1f2630
+$very-dark-blue: hsl(216, 12%, 8%)
+$orange: hsl(25, 97%, 53%)
+
 body
-    background-color: hsl(216, 12%, 8%)
+    background-color: $very-dark-blue
     font-family: 'Overpass', sans-serif
 
 
 .centerBox
     margin: 20vh auto
-    max-width: 250px
-    max-height: 250px
+    max-width: 400px
+    max-height: 500px
     // background-color: #1b222c
-    background-color: #1f2630
+    background-color: $darker-blue
     color: white
-    padding: 20px
-    border-radius: 20px
+    padding: 40px
+    border-radius: 30px
     
 
 #thank-you-page
     display: none
 
+// .icon
+//     background-color: #262f38
+
+.icon-star
+    width: 5%
+    height: 5%
+    padding: 15px
+    background-color: $dark-blue
+    border-radius: 20px
+    margin: 5px 0 15px 0
+
+
 .header
     color:  hsl(0, 0%, 100%)
-    font-size: 1em
+    font-size: 1.8em
 
 .smallText
     color:  hsl(217, 12%, 63%)
-    font-size: 0.7em
+    font-size: 1.1em
     margin: 0
 
 
 .numbers
     display: flex
     justify-content: space-between
-.numberBtn
-    background-color: #262f38
-
-    color:  hsl(217, 12%, 63%)
-    border: none
-    height: 40px
-    width: 40px
-    border-radius: 20px
-    margin: 25px 0
+    margin: 15px 0
+    &-btn, &-btn-selected
+        background-color: $dark-blue
+        color:  $light-grey
+        font-size: 1.3em
+        border: none
+        height: 60px
+        width: 60px
+        border-radius: 30px
+        margin: 25px 0
+        &:hover
+            background-color: $orange
+            color: $white
+        &-selected
+            background-color: $light-grey
+            color: $white
+        
 
 .submitBtn
-    background-color: hsl(25, 97%, 53%)
-    color:  hsl(0, 0%, 100%)
+    background-color: $orange
+    color:  $white
     border: none
-    height: 30px
-    border-radius: 20px
+    height: 50px
+    border-radius: 25px
     width: 100%
     text-transform: uppercase
-    font-weight: 700
+    font-weight: 400
+    font-size: 1.1em
+    letter-spacing: 1px
+    text-align: center
+    &:hover
+        background-color: $white
+        color: $orange
+
 
 
 

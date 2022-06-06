@@ -12,4 +12,12 @@
 
       function getValue(value){
         ratedVal=value;
+        var myElements = document.getElementsByClassName("numbers-btn-selected"); 
+        console.log("there");
+        for(var index = 0; index < myElements.length; index++){
+          console.log("almost there");
+          myElements[index].className="numbers-btn";
+          console.log("here");
+        }
+        document.getElementById(value).className="numbers-btn-selected";
       };

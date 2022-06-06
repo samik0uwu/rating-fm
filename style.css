@@ -5,53 +5,78 @@ body {
 
 .centerBox {
   margin: 20vh auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 400px;
+  max-height: 500px;
   background-color: #1f2630;
   color: white;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 40px;
+  border-radius: 30px;
 }
 
 #thank-you-page {
   display: none;
 }
 
+.icon-star {
+  width: 5%;
+  height: 5%;
+  padding: 15px;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 20px;
+  margin: 5px 0 15px 0;
+}
+
 .header {
   color: hsl(0deg, 0%, 100%);
-  font-size: 1em;
+  font-size: 1.8em;
 }
 
 .smallText {
   color: hsl(217deg, 12%, 63%);
-  font-size: 0.7em;
+  font-size: 1.1em;
   margin: 0;
 }
 
 .numbers {
   display: flex;
   justify-content: space-between;
+  margin: 15px 0;
 }
-
-.numberBtn {
-  background-color: #262f38;
+.numbers-btn, .numbers-btn-selected {
+  background-color: hsl(213deg, 19%, 18%);
   color: hsl(217deg, 12%, 63%);
+  font-size: 1.3em;
   border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
   margin: 25px 0;
+}
+.numbers-btn:hover, .numbers-btn-selected:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.numbers-btn-selected, .numbers-btn-selected-selected {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .submitBtn {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
   border: none;
-  height: 30px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 25px;
   width: 100%;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.submitBtn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
 }
 
 .attribution {
