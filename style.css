@@ -13,10 +13,6 @@ body {
   border-radius: 30px;
 }
 
-#thank-you-page {
-  display: none;
-}
-
 .icon-star {
   width: 5%;
   height: 5%;
@@ -77,6 +73,28 @@ body {
 .submitBtn:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
+}
+
+#thank-you-page {
+  display: none;
+  text-align: center;
+}
+#thank-you-page img {
+  display: block;
+  margin: 30px auto;
+}
+
+#selectedRating {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(25deg, 97%, 53%);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 40px auto;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 1.1em;
 }
 
 .attribution {
