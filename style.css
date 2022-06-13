@@ -51,10 +51,12 @@ body {
 .numbers-btn:hover, .numbers-btn-selected:hover {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
+  transition: 0.5s;
 }
 .numbers-btn-selected, .numbers-btn-selected-selected {
   background-color: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
+  transition: 0.5s;
 }
 
 .submitBtn {
@@ -73,6 +75,7 @@ body {
 .submitBtn:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
+  transition: 0.5s;
 }
 
 #thank-you-page {
